@@ -46,6 +46,7 @@ body {
 	color: #fff;
 	text-decoration: none;
 	padding: 10px 20px;
+	transition: background-color .4s ease-in;
 }
 
 .menu .active {
@@ -55,5 +56,43 @@ body {
 .menu a:hover {
 	background-color:aqua;
 	color:#191A44;
-	transition: ease-in .5s;
+	/*transition: ease-in .4s;*/
+}
+
+.main {
+	margin: 0 auto;
+	width: 80vw;
+	height: 80vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h1 span {
+	color: aqua;
+}
+
+.download-cv {
+	padding: 10px 20px;
+	background-color: aqua;
+	border: none;
+	border-radius: 20px;
+	margin-top: 10px;
+	cursor: pointer;
+	box-shadow: 1px 3px 11px -5px rgba(102,231,200, .9);
+}
+.download-cv:hover {
+	background-color: #fff;
+	box-shadow: none;
+}
+
+.main img {
+	width: 350px;
+	/*max-width: 100%;
+	height: auto; para hacer responsive la imagen*/
+	border: 7px solid aqua;
+	height: 520px;
 }
